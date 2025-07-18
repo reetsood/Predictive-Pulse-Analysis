@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check Your Health</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">MEDICIO</a>
+    <div class="ml-auto">
+      <a class="btn btn-info" href="/details">Check your Blood Pressure</a>
+    </div>
+  </nav>
+  {% if show_info %}
+  <div class="alert alert-info mt-4">
+    <h4>Why Blood Pressure Matters</h4>
+    <p>
+      High blood pressure (hypertension) increases the risk of heart disease and stroke.
+      Monitoring your BP helps detect early health risks and take preventive action.
+    </p>
+  </div>
+{% endif %}
+
+  <div class="container mt-5">
+    <h3 class="text-center">CHECK YOUR HEALTH!</h3>
+    <p class="text-center">Checking blood pressure stage is crucial to assess cardiovascular health, detect hypertension or hypotension, and mitigate risks.</p>
+    <form action="/predict" method="POST">
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label>Select Gender</label>
+          <select class="form-control" name="Gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label>Select Age</label>
+          <select class="form-control" name="Age">
+            <option>18-34</option>
+            <option>35-50</option>
+            <option>51-64</option>
+            <option>65+</option>
+          </select>
+        </div>
+          <div class="form-group col-md-4">
+          <label>Do you have any medical History?</label>
+          <select class="form-control" name="History">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label>If Patient?</label>
+          <select class="form-control" name="Patient">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label>Do you Take Medication?</label>
+          <select class="form-control" name="TakeMedication">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+
+
+        <div class="form-group col-md-4">
+          <label>Select the level of Severity</label>
+          <select class="form-control" name="Severity">
+            <option>Mild</option>
+            <option>Moderate</option>
+            <option>Severe</option>
+          </select>
+        </div>
+        </div>
+       <div class="form-row">
+        <div class="form-group col-md-4">
+          <label>Do you have Breath Shortness?</label>
+          <select class="form-control" name="BreathShortness">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label>Are there any Visual Changes?</label>
+          <select class="form-control" name="VisualChanges">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+
+
+        <div class="form-group col-md-4">
+          <label>Did you have Nose Bleeding?</label>
+          <select class="form-control" name="NoseBleeding">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+         </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label>When Diagnoused?</label>
+          <select class="form-control" name="Whendiagnoused">
+            <option><1year</option>
+            <option>1-5years</option>
+            <option>>5years</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label>Select Systolic</label>
+          <select class="form-control" name="Systolic">
+            <option>111-120</option>
+            <option>121-130</option>
+            <option>130+</option>
+          </select>
+        </div>
+
+
+
+        <div class="form-group col-md-4">
+          <label>Select Diastolic</label>
+          <select class="form-control" name="Diastolic">
+            <option>81-90</option>
+            <option>91-100</option>
+            <option>100+</option>
+          </select>
+        </div>
+        </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label>Do you follow Controlled Diet?</label>
+          <select class="form-control" name="ControlledDiet">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
