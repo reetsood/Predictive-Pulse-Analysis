@@ -1,4 +1,4 @@
-Predictive-Pulse : Harnessing Machine Learning for Blood Pressure Analysis
+# Predictive-Pulse : Harnessing Machine Learning for Blood Pressure Analysis
 
 # Skills Required:
 Python,Data Preprocessing Techniques,Machine Learning,HTML,Flask
@@ -15,7 +15,7 @@ Scenario 3: A healthcare provider oversees a population health initiative focuse
 # Technical Architecture
 <img width="778" height="418" alt="image" src="https://github.com/user-attachments/assets/ac376690-48fb-4cee-9575-9eef26d0bb60" />
 
-#Project Screenshots
+# Project Screenshots
 <img width="1918" height="805" alt="image" src="https://github.com/user-attachments/assets/aab4d5db-6e1d-43d0-96d6-186fda731659" />
 <img width="1916" height="848" alt="image" src="https://github.com/user-attachments/assets/81a6884f-1785-4e91-8d6f-c32cd8d773f8" />
 
